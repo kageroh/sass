@@ -1,0 +1,13 @@
+@import 'vendor';
+
+@mixin float($value, $width) {
+  float: $value;
+  width: $width;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  @include box-sizing(border-box);
+}
