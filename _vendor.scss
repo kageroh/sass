@@ -16,6 +16,11 @@
   box-sizing         : $value;
 }
 
+@mixin linear-gradient($value, $start, $stop) {
+  background:    -moz-linear-gradient($value, $start, $stop);
+  background: -webkit-linear-gradient($value, $start, $stop);
+}
+
 @mixin transform($value) {
   -moz-transform    : $value;
   -webkit-transform : $value;
@@ -28,4 +33,11 @@
   -webkit-transform-origin : $value;
   -o-transform-origin      : $value;
   transform-origin         : $value;
+}
+
+@mixin transition($value) {
+  -moz-transition    : $value;
+  -webkit-transition : $value;
+  -o-transition      : $value;
+  transition         : $value;
 }
